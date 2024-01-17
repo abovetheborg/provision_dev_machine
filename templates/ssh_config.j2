@@ -1,0 +1,7 @@
+{% for vm in list_of_vm %}Host {{vm.alias}}
+        User {{vm.user}}
+        Hostname {{vm.public_ip}}
+        PreferredAuthentications publickey
+        IdentityFile {{vm.identity_file}}
+        
+{% endfor %}
